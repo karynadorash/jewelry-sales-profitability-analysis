@@ -57,6 +57,14 @@ The Power BI dashboard provides a high-level overview of revenue, profitability,
 
 ---
 
+## SQL Analysis
+
+The SQL analysis was structured around five business questions related to pricing, product performance, assortment structure, product characteristics, and customer segments.
+
+The original database schema uses Polish table and column names, while output aliases and project documentation were prepared in English.
+
+---
+
 ## 1. Discount Impact on Revenue & Margin
 
 ### Business Question
@@ -408,3 +416,114 @@ Across the five analyses, the project demonstrates practical use of:
 - profitability analysis
 
 The SQL analysis was designed not only to retrieve data, but to answer business questions related to pricing, assortment management, product profitability, and customer behavior.
+
+---
+
+## Power BI Dashboard
+
+The final Power BI dashboard summarizes the main sales and profitability KPIs in a single executive view.
+
+![Jewelry Sales Dashboard](images/dashboard.png)
+
+The dashboard includes:
+
+- Total Revenue
+- Gross Profit
+- Gross Margin
+- Average Basket Value
+- Gross Profit by Product Category
+- Revenue by Customer Segment
+- Top Products by Revenue
+- Gross Profit by Weight Category
+
+[View Power BI file](powerbi/jewelry_sales_dashboard.pbix)
+
+---
+
+## Key Findings
+
+- The analyzed period generated approximately **1.28B PLN in revenue** and **776.11M PLN in gross profit**, with a **60.66% gross margin**.
+- Low-discount transactions generated approximately **3.1× more revenue** while gross margin decreased by only **1.78 percentage points**.
+- Standard customers generated approximately **98.27% of total revenue**, while VIP customers contributed only **1.73%**.
+- Medium-weight jewelry generated the highest total gross profit, while lightweight products achieved stronger percentage margins.
+- Heavy gold products showed the weakest gross margin among the analyzed weight and metal groups.
+- ABC analysis identified the products responsible for the majority of cumulative revenue.
+
+---
+
+## Business Recommendations
+
+- Prioritize stock availability for Class A products and category leaders.
+- Review Class C products to determine whether their low revenue contribution is justified by strategic value.
+- Use low discounts selectively and monitor whether additional revenue continues to compensate for margin reduction.
+- Investigate the VIP segment further, including purchase frequency, retention, and qualification criteria.
+- Balance total gross profit and gross margin when evaluating product categories.
+- Review pricing and cost structure for heavy gold products due to their comparatively weaker margin.
+
+---
+
+## Data Notes
+
+The dataset covers the period from **01 Apr 2024 to 15 Apr 2024**.
+
+Because the available data represents only a short transactional period, the project focuses on:
+
+- sales structure
+- profitability
+- customer segmentation
+- product performance
+- assortment analysis
+
+The dataset is not suitable for reliable long-term trend, seasonality, or year-over-year analysis.
+
+The original database schema uses Polish table and column names, including:
+
+- `FactSprzedaz`
+- `DimProdukty`
+- `NazwaTowaru`
+- `GrupaTowarowa`
+- `LacznaKwota`
+- `KosztWlasny`
+- `NumerParagonu`
+
+The original schema was preserved, while SQL output aliases, dashboard labels, and project documentation were prepared in English.
+
+---
+
+## Skills Demonstrated
+
+### SQL
+
+- Data aggregation with `GROUP BY`
+- Table joins with `JOIN`
+- Conditional logic with `CASE`
+- Common Table Expressions (CTEs)
+- Window functions
+- `DENSE_RANK()`
+- `PARTITION BY`
+- Cumulative revenue calculations
+- `COUNT(DISTINCT ...)`
+- `COALESCE()`
+- `NULLIF()`
+- Ranking and segmentation
+- Business KPI calculations
+
+### Power BI
+
+- Data modeling
+- DAX measures
+- KPI cards
+- Interactive dashboard design
+- Data visualization
+- Business-focused reporting
+
+### Analytical Skills
+
+- Profitability analysis
+- Discount analysis
+- ABC assortment analysis
+- Customer segmentation
+- Product performance analysis
+- Gross margin analysis
+- Business insight generation
+- Translating analytical results into business recommendations
