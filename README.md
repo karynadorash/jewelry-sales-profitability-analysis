@@ -9,13 +9,13 @@ The goal was not only to calculate sales KPIs, but also to answer practical busi
 
 The analysis was performed using SQL for data exploration and business analysis and Power BI for KPI calculation and dashboard visualization.
 
-**Analysis period:** 01 Apr 2024 – 15 Apr 2024
+Analysis period: 01 Apr 2024 – 15 Apr 2024
 
 > The dataset represents a short transactional snapshot, therefore the project focuses on sales structure and profitability rather than long-term trends or seasonality.
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - SQL
 - Power BI
@@ -40,7 +40,7 @@ The analysis was performed using SQL for data exploration and business analysis 
 
 ---
 
-## 📊 Executive Dashboard
+## Executive Dashboard
 
 The Power BI dashboard provides a high-level overview of revenue, profitability, customer segments, product categories, and product performance.
 
