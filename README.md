@@ -1,4 +1,4 @@
-# jewelry-sales-profitability-analysis
+# Jewelry Sales & Profitability Analysis
 Sales and profitability analysis of a jewelry retailer using SQL and Power BI.
 
 ## Project Overview
@@ -82,3 +82,4 @@ CASE
     WHEN LacznyRabat <= 25 THEN '03. Medium discount (11-25%)'
     ELSE '04. High discount (>25%)'
 END AS DiscountLevel
+```
