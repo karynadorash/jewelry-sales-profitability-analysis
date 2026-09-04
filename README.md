@@ -83,3 +83,4 @@ CASE
     ELSE '04. High discount (>25%)'
 END AS DiscountLevel
 ```
+[View full SQL query](sql/01_discount_margin_analysis.sql)
